@@ -45,8 +45,8 @@ shader_type canvas_item;
 
 uniform sampler2D mixbox_lut; // attach "addons/mixbox/mixbox_lut.png" here
 
-uniform vec4 color1 : hint_color = vec4(0.0, 0.129, 0.522, 1.0); // blue
-uniform vec4 color2 : hint_color = vec4(0.988, 0.827, 0.0, 1.0); // yellow
+uniform vec4 color1 : source_color = vec4(0.0, 0.129, 0.522, 1.0); // blue
+uniform vec4 color2 : source_color = vec4(0.988, 0.827, 0.0, 1.0); // yellow
 
 vec3 _mixbox_eval_polynomial(vec3 _mixbox_c) {
 	float _mixbox_c0 = _mixbox_c[0];
